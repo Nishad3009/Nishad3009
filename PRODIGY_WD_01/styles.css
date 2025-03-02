@@ -1,0 +1,117 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333; /* Dark gray for text */
+  }
+  
+  /* Navigation Bar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navbar ul li {
+    margin: 0 15px;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    color: #333; /* Dark gray */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  #navbar ul li a:hover {
+    color: #007bff; /* Bright blue for hover */
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  }
+  
+  /* Active Menu Item */
+  #navbar ul li a.active {
+    color: #007bff; /* Bright blue for active item */
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background for active item */
+  }
+  
+  /* Content Sections */
+  .content {
+    padding-top: 70px; /* To account for the fixed navbar */
+  }
+  
+  section {
+    height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Light gray background for sections */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border between sections */
+  }
+  
+  section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Bright blue for headings */
+  }
+  
+  section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #555; /* Medium gray for paragraph text */
+  }
+  
+  /* Specific Section Colors */
+  #home {
+    background-color: #ffffff; /* Pure white for the home section */
+  }
+  
+  #about {
+    background-color: #f1f3f5; /* Light gray-blue */
+  }
+  
+  #services {
+    background-color: #e9ecef; /* Light gray */
+  }
+  
+  #portfolio {
+    background-color: #f8f9fa; /* Off-white */
+  }
+  
+  #contact {
+    background-color: #ffffff; /* Pure white for the contact section */
+  }
+  
+  /* Smooth Scroll Behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar Scroll Effect */
+  #navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.98); /* More opaque on scroll */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow on scroll */
+  }
