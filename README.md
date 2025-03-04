@@ -18,9 +18,9 @@ Whether it’s designing a simple webpage or working on the behind-the-scenes co
 - Front-End & Back-End Development
 
 ## 📫 How to reach me
-- ![Email](https://img.shields.io/badge/Email-red?style=flat&logo=gmail) [nishadgosavi72@gmail.com](mailto:nishadgosavi72@gmail.com)
-- ![Instagram](https://img.shields.io/badge/Instagram-purple?style=flat&logo=instagram) [@nishad_676](https://www.instagram.com/nishad_676?utm_source=qr)
-- ![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin) [Nishad Gosavi](https://www.linkedin.com/in/nishad-gosavi-7516812a2)
+[![Email](https://img.shields.io/badge/-Email-red?style=flat&logo=gmail)](mailto:nishadgosavi72@gmail.com)
+[![Instagram](https://img.shields.io/badge/-Instagram-purple?style=flat&logo=instagram)](https://www.instagram.com/nishad_676?utm_source=qr)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/nishad-gosavi-7516812a2)
 
 ## 📊 GitHub Stats
 ![Nishad's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Nishad3009&show_icons=true&theme=dark)
