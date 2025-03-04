@@ -9,7 +9,7 @@
     on any device.
 💞️ I’m looking to collaborate on exciting projects where I can contribute my skills and learn from others. Whether it’s front-end design or
     back-end development, I’m eager to work with like-minded people to create something amazing.
-📫 How to reach me: You can contact me via [email address:- nishadgosavi72@gmail.com], or connect with me on
+📫 How to reach me: You can contact me via [Email address:- nishadgosavi72@gmail.com], or connect with me on
+   [LinkedIn Profile:- linkedin.com/in/nishad-gosavi-7516812a2]
    [Instagram id:- https://www.instagram.com/_nishad_676?utm_source=qr].
 😄 Pronouns:[He/Him/His]
-⚡ Fun fact: ...
