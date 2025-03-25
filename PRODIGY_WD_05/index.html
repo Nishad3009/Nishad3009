@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form id="weatherForm">
+            <input type="text" id="locationInput" placeholder="Enter a city or zip code">
+            <button type="submit">Get Weather</button>
+        </form>
+        <div class="unit-toggle">
+            <label>
+                <input type="radio" name="unit" value="C" checked> °C (CELSIUS)
+            </label>
+            <label>
+                <input type="radio" name="unit" value="F"> °F (FAHRENHEIT)
+            </label>
+        </div>
+        <div id="weatherInfo" class="weather-info">
+            <!-- Current weather information will be displayed here -->
+        </div>
+        <div id="forecastInfo" class="forecast-info">
+            <!-- 5-day forecast will be displayed here -->
+        </div>
+        <div id="searchHistory" class="search-history">
+            <h3>Recent Searches</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
