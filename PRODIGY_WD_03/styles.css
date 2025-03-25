@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #8B4513;
+    color: #4A2C2A;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 248, 220, 0.8); /* Light wood-like background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid #8B4513; /* Dark wood border */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4A2C2A; /* Dark brown text */
+    text-shadow: 2px 2px 5px rgba(255, 248, 220, 0.5);
+  }
+  
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #4A2C2A;
+  }
+  
+  /* Board Styles */
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #D2B48C; /* Light wood texture */
+    border: 2px solid #8B4513; /* Dark wood border */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #4A2C2A; /* Dark brown text */
+    text-shadow: 2px 2px 5px rgba(255, 248, 220, 0.5);
+  }
+  
+  .cell:hover {
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #CD853F; /* Slightly darker wood on hover */
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cell:active {
+    transform: scale(0.95);
+  }
+  
+  /* X and O Styles */
+  .cell.x {
+    color: #8B0000; /* Dark red for X */
+  }
+  
+  .cell.o {
+    color: #556B2F; /* Dark green for O */
+  }
+  
+  /* Winning Line Animation */
+  .winning-line {
+    position: absolute;
+    background: #8B4513; /* Dark wood color */
+    height: 5px;
+    border-radius: 5px;
+    animation: drawLine 0.5s ease-in-out;
+  }
+  
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Reset Button Styles */
+  #reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #A0522D; /* Medium wood texture */
+    color: #FFF8DC; /* Light wood text */
+    border: 2px solid #8B4513; /* Dark wood border */
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  #reset:hover {
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #8B4513; /* Darker wood on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  #reset:active {
+    transform: scale(0.95);
+  }
+  
+  /* Status Text Styles */
+  #status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4A2C2A; /* Dark brown text */
+    text-shadow: 2px 2px 5px rgba(255, 248, 220, 0.5);
+  }
+  
+  /* AI Toggle Switch */
+  #ai-toggle {
+    margin-left: 10px;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #D2B48C; /* Light wood texture */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #8B4513; /* Dark wood border */
+  }
+  
+  #ai-toggle:checked {
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'), #A0522D; /* Medium wood texture */
+  }
+  
+  #ai-toggle::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #FFF8DC; /* Light wood color */
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  #ai-toggle:checked::before {
+    left: 22px;
+  }
